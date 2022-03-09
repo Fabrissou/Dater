@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1000.0" style="-fx-background-color: #B764D4;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.ControllerNewGame">
+   <AnchorPane layoutX="190.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+               minWidth="-Infinity" prefHeight="250.0" prefWidth="620.0" style="-fx-background-color: #000000;"
+               AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="90.0">
+      <AnchorPane layoutX="113.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0"
+                  style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <Text fx:id="gameDate" layoutX="61.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="25.01">
+            <font>
+               <Font size="200.0"/>
+            </font>
+         </Text>
+      </AnchorPane>
+   </AnchorPane>
+   <AnchorPane layoutX="379.0" layoutY="414.0" prefHeight="210.0" prefWidth="320.0"
+               style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="340.0"
+               AnchorPane.rightAnchor="340.0">
+      <AnchorPane layoutX="60.0" layoutY="-8.0" prefHeight="200.0" prefWidth="200.0"
+                  style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <Text fx:id="infoText" layoutX="25.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="ВАШ ХОД" textAlignment="CENTER" wrappingWidth="246.318359375">
+            <font>
+               <Font size="30.0"/>
+            </font>
+         </Text>
+      </AnchorPane>
+   </AnchorPane>
+   <AnchorPane layoutX="115.0" layoutY="408.0" prefHeight="269.0" prefWidth="120.0"
+               style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="120.0"
+               AnchorPane.topAnchor="380.0">
+      <AnchorPane layoutX="-40.0" layoutY="-17.0" prefHeight="250.0" prefWidth="100.0"
+                  style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <Text layoutX="21.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДЕНЬ"
+               AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="8.10107421875" AnchorPane.topAnchor="10.0">
+            <font>
+               <Font size="25.0"/>
+            </font>
+         </Text>
+         <Button fx:id="dayPlusOne" layoutX="19.0" layoutY="65.0" mnemonicParsing="false" onAction="#dayPlusOne"
+                 prefHeight="60.0" prefWidth="60.0" text="+1" AnchorPane.bottomAnchor="110.0"
+                 AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+            <font>
+               <Font name="System Bold" size="19.0"/>
+            </font>
+         </Button>
+         <Button fx:id="dayPlusTwo" layoutX="27.0" layoutY="156.0" mnemonicParsing="false" onAction="#dayPlusTwo"
+                 prefHeight="60.0" prefWidth="60.0" text="+2" AnchorPane.bottomAnchor="20.0"
+                 AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <font>
+               <Font name="System Bold" size="19.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+   <AnchorPane layoutX="125.0" layoutY="418.0" prefHeight="269.0" prefWidth="120.0"
+               style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="120.0"
+               AnchorPane.topAnchor="380.0">
+      <AnchorPane layoutX="-32.0" layoutY="50.0" prefHeight="250.0" prefWidth="100.0"
+                  style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Text layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МЕСЯЦ"
+                  AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.10107421875" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="25.0"/>
+               </font>
+            </Text>
+            <Button fx:id="monthPlusOne" layoutX="24.0" layoutY="82.0" mnemonicParsing="false"
+                    onAction="#monthPlusOne" text="+1" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="20.0"
+                    AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font name="System Bold" size="23.0"/>
+               </font>
+            </Button>
+            <Button fx:id="monthPlusTwo" layoutX="22.0" layoutY="184.0" mnemonicParsing="false"
+                    onAction="#monthPlusTwo" prefHeight="60.0" prefWidth="60.0" text="+2"
+                    AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="23.0"/>
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </AnchorPane>
+   <Button fx:id="menu" layoutX="889.0" layoutY="49.0" mnemonicParsing="false" onAction="#menu" prefHeight="45.0"
+           prefWidth="100.0" text="МЕНЮ" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <font>
+         <Font size="21.0"/>
+      </font>
+   </Button>
+</AnchorPane>

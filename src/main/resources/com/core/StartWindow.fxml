@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1000.0" style="-fx-background-color: #B764D4;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Controller">
+    <Text fx:id="text" layoutY="204.5" strokeType="OUTSIDE" strokeWidth="0.0" text="dateer" textAlignment="CENTER"
+          wrappingWidth="1000.0" AnchorPane.bottomAnchor="406.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="28.0">
+        <font>
+            <Font name="STCaiyun" size="250.0"/>
+        </font>
+        <fill>
+            <LinearGradient endX="1.0" endY="0.5303030582991514" startX="1.0" startY="0.5454545183615251">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.9784482717514038" green="1.0"/>
+                        </color>
+                    </Stop>
+                    <Stop offset="0.007680491551459294">
+                        <color>
+                            <Color red="0.9784482717514038" green="1.0"/>
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.32298874855041504" blue="1.0"/>
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </fill>
+        <stroke>
+            <LinearGradient endX="1.0" endY="0.6590909158641642" startX="1.0" startY="0.2272727146293177">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color/>
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.7163445353507996" green="0.07519999891519547" blue="0.9399999976158142"/>
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </stroke>
+    </Text>
+    <Button fx:id="newGameButton" layoutX="323.0" layoutY="212.0" mnemonicParsing="false" onAction="#startNewGame"
+            prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #A2EB00;" text="Новая игра"
+            AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="300.0">
+        <font>
+            <Font size="35.0"/>
+        </font>
+    </Button>
+    <Button fx:id="rulesButton" layoutX="333.0" layoutY="222.0" mnemonicParsing="false" onAction="#openRules"
+            prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #fff500;" text="Правила"
+            AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="400.0">
+        <font>
+            <Font size="35.0"/>
+        </font>
+    </Button>
+    <Button fx:id="closeButton" layoutX="343.0" layoutY="232.0" mnemonicParsing="false" onAction="#closeCurrentWindow"
+            prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #ff0000;" text="Выход"
+            AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="500.0">
+        <font>
+            <Font size="35.0"/>
+        </font>
+    </Button>
+</AnchorPane>
