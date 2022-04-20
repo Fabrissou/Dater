@@ -17,7 +17,7 @@ public class Main extends Application {
         stage.setResizable(false);
         stage.show();
     }
-
+//запуск программы. При запуске открывается StartWindow.fxml, который управляется с помощью Controller
     public static void main(String[] args) {
         launch();
     }

@@ -1,15 +1,9 @@
 package com.controller;
 
-import com.core.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -27,11 +21,13 @@ public class Controller implements AppUtils {
     @FXML
     private Text text;
 
+//    закрытие текущего окна
     @FXML
     void closeCurrentWindow(ActionEvent event) {
         closeCurrentWindow(text);
     }
 
+//   открыть правила
     @FXML
     void openRules(ActionEvent event) {
         try {
@@ -40,7 +36,7 @@ public class Controller implements AppUtils {
             e.printStackTrace();
         }
     }
-
+//  запустить игру (ControllerNewGame)
     @FXML
     void startNewGame(ActionEvent event) throws IOException {
         newGameButton.getScene().getWindow().hide();
