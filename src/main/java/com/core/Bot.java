@@ -137,45 +137,4 @@ public class Bot {
         return -100;
     }
 
-
-//    private Score miniMax(DayAndMonth date, Seed seed) {
-//        int bestScore = (seed == ourSeed) ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-//        int bestPos = 0;
-//
-//        DayAndMonth[] dateList = new DayAndMonth[4];
-//        dateList[0] = new DayAndMonth(date.getDay() + 1, date.getMonth());
-//        dateList[1] = new DayAndMonth(date.getDay() + 2, date.getMonth());
-//        dateList[2] = new DayAndMonth(date.getDay(), date.getMonth() + 1);
-//        dateList[3] = new DayAndMonth(date.getDay(), date.getMonth() + 2);
-//
-//        // Проходим в цикле по позициям
-//        for (int i = 0; i < 4; i++) {
-//            if (checkDate(dateList[i])) {
-//
-//                if (seed == ourSeed) {  // Если сыграл ourSeed
-//                    if (dateList[i].toString() == "31.12") {
-//                        return new Score(i, );
-//                    }
-//                    // Передаем ход oppSeed
-//                    int currentScore = miniMax(dateList[i], oppSeed).getScorePoints();
-//                    // Ищем максимум оценки игровой ситуации и сохраняем наилучшую для ourSeed позицию
-//                    if (currentScore > bestScore) {
-//                        bestScore = currentScore;
-//                        bestPos = i;
-//                    }
-//                } else {  // Если сыграл oppSeed
-//                    // Передаем ход ourSeed
-//                    int currentScore = miniMax(dateList[i], ourSeed).getScorePoints();
-//                    // Ищем минимум оценки игровой ситуации и сохраняем наилучшую для oppSeed позицию
-//                    if (currentScore < bestScore) {
-//                        bestScore = currentScore;
-//                        bestPos = i;
-//                    }
-//                }
-//            }
-//        }
-//
-//        return new Score(bestPos, bestScore);
-//    }
-
 }
